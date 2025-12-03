@@ -1,0 +1,194 @@
+body {
+    background-color: #f0f4f8;
+}
+
+.header {
+    background: linear-gradient(135deg, #0066cc 0%, #004c99 100%);
+    padding: 20px 0;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 140px);
+    padding: 20px;
+}
+
+.login-box {
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+.welcome {
+    color: #0066cc;
+    font-size: 36px;
+    margin-bottom: 50px;
+    font-weight: 600;
+}
+
+.form-group {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    color: #0066cc;
+    font-size: 16px;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #e0e0e0;
+    background-color: #ffffff;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #0066cc;
+    outline: none;
+}
+
+.forgot-password {
+    color: #0066cc;
+    font-size: 17px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.forgot-password a {
+    color: #0066cc;
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+.forgot-password a:hover {
+    color: #004c99;
+}
+
+.btn-login {
+    width: 60%;
+    max-width: 270px;
+    padding: 17px;
+    background-color: #0066cc;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 4px 15px rgba(0, 102, 204, 0.3);
+}
+
+.btn-login:hover {
+    background-color: #0052a3;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 102, 204, 0.4);
+}
+
+/* Navbar - Azul Royal + Branco */
+.navbar {
+    background: linear-gradient(135deg, #0066cc 0%, #004c99 100%) !important;
+    padding: 15px 20px;
+    box-shadow: 0 4px 15px rgba(0, 102, 204, 0.3);
+}
+
+/* Logo/Brand */
+.navbar-brand {
+    color: #ffffff !important;
+    font-size: 24px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar-brand:hover {
+    color: #ffd60a !important;
+}
+
+/* Links do menu */
+.nav-link {
+    color: #ffffff !important;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 15px !important;
+    transition: all 0.3s;
+    border-radius: 4px;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
+}
+
+.nav-link.active {
+    background-color: rgba(255, 255, 255, 0.25);
+    font-weight: 600;
+}
+
+/* Botão de buscar */
+.btn-outline-success {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.btn-outline-success:hover {
+    background-color: #ffffff;
+    color: #0066cc;
+    border-color: #ffffff;
+}
+
+/* Campo de busca */
+.form-control {
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: all 0.3s;
+}
+
+.form-control:focus {
+    border-color: #ffffff;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
+}
+
+.form-control::placeholder {
+    color: #666;
+}
+
+/* Ícone do menu hambúrguer (mobile) */
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
+}
+
+/* Responsivo - menu collapse */
+@media (max-width: 991px) {
+    .navbar-collapse {
+        background-color: rgba(0, 82, 163, 0.95);
+        padding: 15px;
+        border-radius: 8px;
+        margin-top: 15px;
+    }
+}
